@@ -49,12 +49,19 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="rSI-av-B5Z" firstAttribute="top" secondItem="fhA-nl-YgM" secondAttribute="bottom" constant="50" id="5DN-bL-AhA"/>
-                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="yBS-Hd-G89" secondAttribute="bottom" constant="100" id="P6t-Is-WqL"/>
-                            <constraint firstItem="yBS-Hd-G89" firstAttribute="top" secondItem="rSI-av-B5Z" secondAttribute="bottom" constant="50" id="P7Q-FZ-KvM"/>
-                            <constraint firstItem="fhA-nl-YgM" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="100" id="Qwr-bd-7NI"/>
+                            <constraint firstAttribute="centerX" secondItem="rSI-av-B5Z" secondAttribute="centerX" id="310-0f-gPg"/>
+                            <constraint firstItem="yBS-Hd-G89" firstAttribute="top" secondItem="rSI-av-B5Z" secondAttribute="bottom" constant="60" id="KJm-H9-FC1"/>
+                            <constraint firstItem="rSI-av-B5Z" firstAttribute="top" secondItem="fhA-nl-YgM" secondAttribute="bottom" constant="60" id="OzL-GE-coh"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="yBS-Hd-G89" secondAttribute="bottom" constant="50" id="P6t-Is-WqL"/>
+                            <constraint firstAttribute="centerX" secondItem="yBS-Hd-G89" secondAttribute="centerX" id="QCv-H4-8Ue"/>
+                            <constraint firstItem="fhA-nl-YgM" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="30" id="Qwr-bd-7NI"/>
+                            <constraint firstAttribute="centerY" secondItem="rSI-av-B5Z" secondAttribute="centerY" id="cXa-qR-OfV"/>
+                            <constraint firstAttribute="centerX" secondItem="fhA-nl-YgM" secondAttribute="centerX" id="dwK-n3-gVH"/>
                         </constraints>
                     </view>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outletCollection property="buttons" destination="fhA-nl-YgM" id="V0T-Jk-XwI"/>
                         <outletCollection property="buttons" destination="rSI-av-B5Z" id="bmw-K7-mRv"/>
