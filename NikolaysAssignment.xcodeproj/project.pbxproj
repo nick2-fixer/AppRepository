@@ -7,6 +7,60 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		590F530718FC188B0099E989 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 590F530618FC188B0099E989 /* FacebookSDK.framework */; };
+		590F532118FC1CFB0099E989 /* libOAuth.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 590F530B18FC1CFB0099E989 /* libOAuth.a */; };
+		590F532218FC1CFB0099E989 /* SA_OAuthTwitterController.m in Sources */ = {isa = PBXBuildFile; fileRef = 590F531E18FC1CFB0099E989 /* SA_OAuthTwitterController.m */; };
+		590F532318FC1CFB0099E989 /* SA_OAuthTwitterEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 590F532018FC1CFB0099E989 /* SA_OAuthTwitterEngine.m */; };
+		590F539E18FC1F230099E989 /* Changelog in Resources */ = {isa = PBXBuildFile; fileRef = 590F532518FC1F230099E989 /* Changelog */; };
+		590F539F18FC1F230099E989 /* GoogleOpenSource.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 590F532618FC1F230099E989 /* GoogleOpenSource.framework */; };
+		590F53A018FC1F230099E989 /* GooglePlus.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 590F532718FC1F230099E989 /* GooglePlus.bundle */; };
+		590F53A118FC1F230099E989 /* GooglePlus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 590F532818FC1F230099E989 /* GooglePlus.framework */; };
+		590F53A218FC1F230099E989 /* GTLBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = 590F532D18FC1F230099E989 /* GTLBase64.m */; };
+		590F53A318FC1F230099E989 /* GTLBatchQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 590F532F18FC1F230099E989 /* GTLBatchQuery.m */; };
+		590F53A418FC1F230099E989 /* GTLBatchResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 590F533118FC1F230099E989 /* GTLBatchResult.m */; };
+		590F53A518FC1F230099E989 /* GTLDateTime.m in Sources */ = {isa = PBXBuildFile; fileRef = 590F533318FC1F230099E989 /* GTLDateTime.m */; };
+		590F53A618FC1F230099E989 /* GTLErrorObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 590F533618FC1F230099E989 /* GTLErrorObject.m */; };
+		590F53A718FC1F230099E989 /* GTLFramework.m in Sources */ = {isa = PBXBuildFile; fileRef = 590F533818FC1F230099E989 /* GTLFramework.m */; };
+		590F53A818FC1F230099E989 /* GTLJSONParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 590F533A18FC1F230099E989 /* GTLJSONParser.m */; };
+		590F53A918FC1F230099E989 /* GTLObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 590F533C18FC1F230099E989 /* GTLObject.m */; };
+		590F53AA18FC1F230099E989 /* GTLPlusAcl.m in Sources */ = {isa = PBXBuildFile; fileRef = 590F534018FC1F230099E989 /* GTLPlusAcl.m */; };
+		590F53AB18FC1F230099E989 /* GTLPlusAclentryResource.m in Sources */ = {isa = PBXBuildFile; fileRef = 590F534218FC1F230099E989 /* GTLPlusAclentryResource.m */; };
+		590F53AC18FC1F230099E989 /* GTLPlusActivity.m in Sources */ = {isa = PBXBuildFile; fileRef = 590F534418FC1F230099E989 /* GTLPlusActivity.m */; };
+		590F53AD18FC1F230099E989 /* GTLPlusActivityFeed.m in Sources */ = {isa = PBXBuildFile; fileRef = 590F534618FC1F230099E989 /* GTLPlusActivityFeed.m */; };
+		590F53AE18FC1F230099E989 /* GTLPlusComment.m in Sources */ = {isa = PBXBuildFile; fileRef = 590F534818FC1F230099E989 /* GTLPlusComment.m */; };
+		590F53AF18FC1F230099E989 /* GTLPlusCommentFeed.m in Sources */ = {isa = PBXBuildFile; fileRef = 590F534A18FC1F230099E989 /* GTLPlusCommentFeed.m */; };
+		590F53B018FC1F230099E989 /* GTLPlusConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 590F534C18FC1F230099E989 /* GTLPlusConstants.m */; };
+		590F53B118FC1F230099E989 /* GTLPlusItemScope.m in Sources */ = {isa = PBXBuildFile; fileRef = 590F534E18FC1F230099E989 /* GTLPlusItemScope.m */; };
+		590F53B218FC1F230099E989 /* GTLPlusMoment.m in Sources */ = {isa = PBXBuildFile; fileRef = 590F535018FC1F230099E989 /* GTLPlusMoment.m */; };
+		590F53B318FC1F230099E989 /* GTLPlusMomentsFeed.m in Sources */ = {isa = PBXBuildFile; fileRef = 590F535218FC1F230099E989 /* GTLPlusMomentsFeed.m */; };
+		590F53B418FC1F230099E989 /* GTLPlusPeopleFeed.m in Sources */ = {isa = PBXBuildFile; fileRef = 590F535418FC1F230099E989 /* GTLPlusPeopleFeed.m */; };
+		590F53B518FC1F230099E989 /* GTLPlusPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 590F535618FC1F230099E989 /* GTLPlusPerson.m */; };
+		590F53B618FC1F230099E989 /* GTLPlusPlace.m in Sources */ = {isa = PBXBuildFile; fileRef = 590F535818FC1F230099E989 /* GTLPlusPlace.m */; };
+		590F53B718FC1F230099E989 /* GTLQueryPlus.m in Sources */ = {isa = PBXBuildFile; fileRef = 590F535A18FC1F230099E989 /* GTLQueryPlus.m */; };
+		590F53B818FC1F230099E989 /* GTLServicePlus.m in Sources */ = {isa = PBXBuildFile; fileRef = 590F535C18FC1F230099E989 /* GTLServicePlus.m */; };
+		590F53B918FC1F230099E989 /* GTLQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 590F535E18FC1F230099E989 /* GTLQuery.m */; };
+		590F53BA18FC1F230099E989 /* GTLRuntimeCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = 590F536018FC1F230099E989 /* GTLRuntimeCommon.m */; };
+		590F53BB18FC1F230099E989 /* GTLService.m in Sources */ = {isa = PBXBuildFile; fileRef = 590F536218FC1F230099E989 /* GTLService.m */; };
+		590F53BC18FC1F230099E989 /* GTLUploadParameters.m in Sources */ = {isa = PBXBuildFile; fileRef = 590F536518FC1F230099E989 /* GTLUploadParameters.m */; };
+		590F53BD18FC1F230099E989 /* GTLUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 590F536718FC1F230099E989 /* GTLUtilities.m */; };
+		590F53BE18FC1F230099E989 /* GTMHTTPFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 590F536B18FC1F230099E989 /* GTMHTTPFetcher.m */; };
+		590F53BF18FC1F230099E989 /* GTMHTTPFetcherLogging.m in Sources */ = {isa = PBXBuildFile; fileRef = 590F536D18FC1F230099E989 /* GTMHTTPFetcherLogging.m */; };
+		590F53C018FC1F230099E989 /* GTMHTTPFetcherService.m in Sources */ = {isa = PBXBuildFile; fileRef = 590F536F18FC1F230099E989 /* GTMHTTPFetcherService.m */; };
+		590F53C118FC1F230099E989 /* GTMHTTPFetchHistory.m in Sources */ = {isa = PBXBuildFile; fileRef = 590F537118FC1F230099E989 /* GTMHTTPFetchHistory.m */; };
+		590F53C218FC1F230099E989 /* GTMHTTPUploadFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 590F537318FC1F230099E989 /* GTMHTTPUploadFetcher.m */; };
+		590F53C318FC1F230099E989 /* GTMLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 590F537518FC1F230099E989 /* GTMLogger.m */; };
+		590F53C418FC1F230099E989 /* GTMMethodCheck.m in Sources */ = {isa = PBXBuildFile; fileRef = 590F537718FC1F230099E989 /* GTMMethodCheck.m */; };
+		590F53C518FC1F230099E989 /* GTMNSDictionary+URLArguments.m in Sources */ = {isa = PBXBuildFile; fileRef = 590F537918FC1F230099E989 /* GTMNSDictionary+URLArguments.m */; };
+		590F53C618FC1F230099E989 /* GTMNSString+URLArguments.m in Sources */ = {isa = PBXBuildFile; fileRef = 590F537B18FC1F230099E989 /* GTMNSString+URLArguments.m */; };
+		590F53C718FC1F230099E989 /* GTMOAuth2Authentication.m in Sources */ = {isa = PBXBuildFile; fileRef = 590F537D18FC1F230099E989 /* GTMOAuth2Authentication.m */; };
+		590F53C818FC1F230099E989 /* GTMOAuth2SignIn.m in Sources */ = {isa = PBXBuildFile; fileRef = 590F537F18FC1F230099E989 /* GTMOAuth2SignIn.m */; };
+		590F53C918FC1F230099E989 /* GTMOAuth2ViewControllerTouch.m in Sources */ = {isa = PBXBuildFile; fileRef = 590F538118FC1F230099E989 /* GTMOAuth2ViewControllerTouch.m */; };
+		590F53CA18FC1F230099E989 /* GTMObjC2Runtime.m in Sources */ = {isa = PBXBuildFile; fileRef = 590F538318FC1F230099E989 /* GTMObjC2Runtime.m */; };
+		590F53CB18FC1F230099E989 /* OpenInChromeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 590F538518FC1F230099E989 /* OpenInChromeController.m */; };
+		590F53CC18FC1F230099E989 /* README in Resources */ = {isa = PBXBuildFile; fileRef = 590F538618FC1F230099E989 /* README */; };
+		590F53CD18FC1F230099E989 /* libOAuth.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 590F538818FC1F230099E989 /* libOAuth.a */; };
+		590F53CE18FC1F230099E989 /* SA_OAuthTwitterController.m in Sources */ = {isa = PBXBuildFile; fileRef = 590F539B18FC1F230099E989 /* SA_OAuthTwitterController.m */; };
+		590F53CF18FC1F230099E989 /* SA_OAuthTwitterEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 590F539D18FC1F230099E989 /* SA_OAuthTwitterEngine.m */; };
 		59B7B70418FC08FD0012E06F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59B7B70318FC08FD0012E06F /* Foundation.framework */; };
 		59B7B70618FC08FD0012E06F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59B7B70518FC08FD0012E06F /* CoreGraphics.framework */; };
 		59B7B70818FC08FD0012E06F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59B7B70718FC08FD0012E06F /* UIKit.framework */; };
@@ -35,6 +89,142 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		590F530618FC188B0099E989 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
+		590F530B18FC1CFB0099E989 /* libOAuth.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libOAuth.a; sourceTree = "<group>"; };
+		590F530D18FC1CFB0099E989 /* NSMutableURLRequest+Parameters.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableURLRequest+Parameters.h"; sourceTree = "<group>"; };
+		590F530E18FC1CFB0099E989 /* NSString+URLEncoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+URLEncoding.h"; sourceTree = "<group>"; };
+		590F530F18FC1CFB0099E989 /* NSURL+Base.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURL+Base.h"; sourceTree = "<group>"; };
+		590F531018FC1CFB0099E989 /* OAAsynchronousDataFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OAAsynchronousDataFetcher.h; sourceTree = "<group>"; };
+		590F531118FC1CFB0099E989 /* OAConsumer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OAConsumer.h; sourceTree = "<group>"; };
+		590F531218FC1CFB0099E989 /* OADataFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OADataFetcher.h; sourceTree = "<group>"; };
+		590F531318FC1CFB0099E989 /* OAHMAC_SHA1SignatureProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OAHMAC_SHA1SignatureProvider.h; sourceTree = "<group>"; };
+		590F531418FC1CFB0099E989 /* OAMutableURLRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OAMutableURLRequest.h; sourceTree = "<group>"; };
+		590F531518FC1CFB0099E989 /* OAPlaintextSignatureProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OAPlaintextSignatureProvider.h; sourceTree = "<group>"; };
+		590F531618FC1CFB0099E989 /* OARequestParameter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OARequestParameter.h; sourceTree = "<group>"; };
+		590F531718FC1CFB0099E989 /* OAServiceTicket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OAServiceTicket.h; sourceTree = "<group>"; };
+		590F531818FC1CFB0099E989 /* OASignatureProviding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OASignatureProviding.h; sourceTree = "<group>"; };
+		590F531918FC1CFB0099E989 /* OAToken.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OAToken.h; sourceTree = "<group>"; };
+		590F531A18FC1CFB0099E989 /* OAToken_KeychainExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OAToken_KeychainExtensions.h; sourceTree = "<group>"; };
+		590F531B18FC1CFB0099E989 /* OAuthConsumer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OAuthConsumer.h; sourceTree = "<group>"; };
+		590F531D18FC1CFB0099E989 /* SA_OAuthTwitterController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SA_OAuthTwitterController.h; sourceTree = "<group>"; };
+		590F531E18FC1CFB0099E989 /* SA_OAuthTwitterController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SA_OAuthTwitterController.m; sourceTree = "<group>"; };
+		590F531F18FC1CFB0099E989 /* SA_OAuthTwitterEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SA_OAuthTwitterEngine.h; sourceTree = "<group>"; };
+		590F532018FC1CFB0099E989 /* SA_OAuthTwitterEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SA_OAuthTwitterEngine.m; sourceTree = "<group>"; };
+		590F532518FC1F230099E989 /* Changelog */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Changelog; sourceTree = "<group>"; };
+		590F532618FC1F230099E989 /* GoogleOpenSource.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleOpenSource.framework; sourceTree = "<group>"; };
+		590F532718FC1F230099E989 /* GooglePlus.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = GooglePlus.bundle; sourceTree = "<group>"; };
+		590F532818FC1F230099E989 /* GooglePlus.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GooglePlus.framework; sourceTree = "<group>"; };
+		590F532A18FC1F230099E989 /* GoogleOpenSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoogleOpenSource.h; sourceTree = "<group>"; };
+		590F532C18FC1F230099E989 /* GTLBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTLBase64.h; sourceTree = "<group>"; };
+		590F532D18FC1F230099E989 /* GTLBase64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTLBase64.m; sourceTree = "<group>"; };
+		590F532E18FC1F230099E989 /* GTLBatchQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTLBatchQuery.h; sourceTree = "<group>"; };
+		590F532F18FC1F230099E989 /* GTLBatchQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTLBatchQuery.m; sourceTree = "<group>"; };
+		590F533018FC1F230099E989 /* GTLBatchResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTLBatchResult.h; sourceTree = "<group>"; };
+		590F533118FC1F230099E989 /* GTLBatchResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTLBatchResult.m; sourceTree = "<group>"; };
+		590F533218FC1F230099E989 /* GTLDateTime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTLDateTime.h; sourceTree = "<group>"; };
+		590F533318FC1F230099E989 /* GTLDateTime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTLDateTime.m; sourceTree = "<group>"; };
+		590F533418FC1F230099E989 /* GTLDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTLDefines.h; sourceTree = "<group>"; };
+		590F533518FC1F230099E989 /* GTLErrorObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTLErrorObject.h; sourceTree = "<group>"; };
+		590F533618FC1F230099E989 /* GTLErrorObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTLErrorObject.m; sourceTree = "<group>"; };
+		590F533718FC1F230099E989 /* GTLFramework.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTLFramework.h; sourceTree = "<group>"; };
+		590F533818FC1F230099E989 /* GTLFramework.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTLFramework.m; sourceTree = "<group>"; };
+		590F533918FC1F230099E989 /* GTLJSONParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTLJSONParser.h; sourceTree = "<group>"; };
+		590F533A18FC1F230099E989 /* GTLJSONParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTLJSONParser.m; sourceTree = "<group>"; };
+		590F533B18FC1F230099E989 /* GTLObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTLObject.h; sourceTree = "<group>"; };
+		590F533C18FC1F230099E989 /* GTLObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTLObject.m; sourceTree = "<group>"; };
+		590F533E18FC1F230099E989 /* GTLPlus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTLPlus.h; sourceTree = "<group>"; };
+		590F533F18FC1F230099E989 /* GTLPlusAcl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTLPlusAcl.h; sourceTree = "<group>"; };
+		590F534018FC1F230099E989 /* GTLPlusAcl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTLPlusAcl.m; sourceTree = "<group>"; };
+		590F534118FC1F230099E989 /* GTLPlusAclentryResource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTLPlusAclentryResource.h; sourceTree = "<group>"; };
+		590F534218FC1F230099E989 /* GTLPlusAclentryResource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTLPlusAclentryResource.m; sourceTree = "<group>"; };
+		590F534318FC1F230099E989 /* GTLPlusActivity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTLPlusActivity.h; sourceTree = "<group>"; };
+		590F534418FC1F230099E989 /* GTLPlusActivity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTLPlusActivity.m; sourceTree = "<group>"; };
+		590F534518FC1F230099E989 /* GTLPlusActivityFeed.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTLPlusActivityFeed.h; sourceTree = "<group>"; };
+		590F534618FC1F230099E989 /* GTLPlusActivityFeed.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTLPlusActivityFeed.m; sourceTree = "<group>"; };
+		590F534718FC1F230099E989 /* GTLPlusComment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTLPlusComment.h; sourceTree = "<group>"; };
+		590F534818FC1F230099E989 /* GTLPlusComment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTLPlusComment.m; sourceTree = "<group>"; };
+		590F534918FC1F230099E989 /* GTLPlusCommentFeed.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTLPlusCommentFeed.h; sourceTree = "<group>"; };
+		590F534A18FC1F230099E989 /* GTLPlusCommentFeed.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTLPlusCommentFeed.m; sourceTree = "<group>"; };
+		590F534B18FC1F230099E989 /* GTLPlusConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTLPlusConstants.h; sourceTree = "<group>"; };
+		590F534C18FC1F230099E989 /* GTLPlusConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTLPlusConstants.m; sourceTree = "<group>"; };
+		590F534D18FC1F230099E989 /* GTLPlusItemScope.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTLPlusItemScope.h; sourceTree = "<group>"; };
+		590F534E18FC1F230099E989 /* GTLPlusItemScope.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTLPlusItemScope.m; sourceTree = "<group>"; };
+		590F534F18FC1F230099E989 /* GTLPlusMoment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTLPlusMoment.h; sourceTree = "<group>"; };
+		590F535018FC1F230099E989 /* GTLPlusMoment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTLPlusMoment.m; sourceTree = "<group>"; };
+		590F535118FC1F230099E989 /* GTLPlusMomentsFeed.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTLPlusMomentsFeed.h; sourceTree = "<group>"; };
+		590F535218FC1F230099E989 /* GTLPlusMomentsFeed.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTLPlusMomentsFeed.m; sourceTree = "<group>"; };
+		590F535318FC1F230099E989 /* GTLPlusPeopleFeed.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTLPlusPeopleFeed.h; sourceTree = "<group>"; };
+		590F535418FC1F230099E989 /* GTLPlusPeopleFeed.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTLPlusPeopleFeed.m; sourceTree = "<group>"; };
+		590F535518FC1F230099E989 /* GTLPlusPerson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTLPlusPerson.h; sourceTree = "<group>"; };
+		590F535618FC1F230099E989 /* GTLPlusPerson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTLPlusPerson.m; sourceTree = "<group>"; };
+		590F535718FC1F230099E989 /* GTLPlusPlace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTLPlusPlace.h; sourceTree = "<group>"; };
+		590F535818FC1F230099E989 /* GTLPlusPlace.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTLPlusPlace.m; sourceTree = "<group>"; };
+		590F535918FC1F230099E989 /* GTLQueryPlus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTLQueryPlus.h; sourceTree = "<group>"; };
+		590F535A18FC1F230099E989 /* GTLQueryPlus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTLQueryPlus.m; sourceTree = "<group>"; };
+		590F535B18FC1F230099E989 /* GTLServicePlus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTLServicePlus.h; sourceTree = "<group>"; };
+		590F535C18FC1F230099E989 /* GTLServicePlus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTLServicePlus.m; sourceTree = "<group>"; };
+		590F535D18FC1F230099E989 /* GTLQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTLQuery.h; sourceTree = "<group>"; };
+		590F535E18FC1F230099E989 /* GTLQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTLQuery.m; sourceTree = "<group>"; };
+		590F535F18FC1F230099E989 /* GTLRuntimeCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTLRuntimeCommon.h; sourceTree = "<group>"; };
+		590F536018FC1F230099E989 /* GTLRuntimeCommon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTLRuntimeCommon.m; sourceTree = "<group>"; };
+		590F536118FC1F230099E989 /* GTLService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTLService.h; sourceTree = "<group>"; };
+		590F536218FC1F230099E989 /* GTLService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTLService.m; sourceTree = "<group>"; };
+		590F536318FC1F230099E989 /* GTLTargetNamespace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTLTargetNamespace.h; sourceTree = "<group>"; };
+		590F536418FC1F230099E989 /* GTLUploadParameters.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTLUploadParameters.h; sourceTree = "<group>"; };
+		590F536518FC1F230099E989 /* GTLUploadParameters.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTLUploadParameters.m; sourceTree = "<group>"; };
+		590F536618FC1F230099E989 /* GTLUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTLUtilities.h; sourceTree = "<group>"; };
+		590F536718FC1F230099E989 /* GTLUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTLUtilities.m; sourceTree = "<group>"; };
+		590F536818FC1F230099E989 /* GTMDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMDefines.h; sourceTree = "<group>"; };
+		590F536918FC1F230099E989 /* GTMGarbageCollection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMGarbageCollection.h; sourceTree = "<group>"; };
+		590F536A18FC1F230099E989 /* GTMHTTPFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMHTTPFetcher.h; sourceTree = "<group>"; };
+		590F536B18FC1F230099E989 /* GTMHTTPFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMHTTPFetcher.m; sourceTree = "<group>"; };
+		590F536C18FC1F230099E989 /* GTMHTTPFetcherLogging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMHTTPFetcherLogging.h; sourceTree = "<group>"; };
+		590F536D18FC1F230099E989 /* GTMHTTPFetcherLogging.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMHTTPFetcherLogging.m; sourceTree = "<group>"; };
+		590F536E18FC1F230099E989 /* GTMHTTPFetcherService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMHTTPFetcherService.h; sourceTree = "<group>"; };
+		590F536F18FC1F230099E989 /* GTMHTTPFetcherService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMHTTPFetcherService.m; sourceTree = "<group>"; };
+		590F537018FC1F230099E989 /* GTMHTTPFetchHistory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMHTTPFetchHistory.h; sourceTree = "<group>"; };
+		590F537118FC1F230099E989 /* GTMHTTPFetchHistory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMHTTPFetchHistory.m; sourceTree = "<group>"; };
+		590F537218FC1F230099E989 /* GTMHTTPUploadFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMHTTPUploadFetcher.h; sourceTree = "<group>"; };
+		590F537318FC1F230099E989 /* GTMHTTPUploadFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMHTTPUploadFetcher.m; sourceTree = "<group>"; };
+		590F537418FC1F230099E989 /* GTMLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMLogger.h; sourceTree = "<group>"; };
+		590F537518FC1F230099E989 /* GTMLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMLogger.m; sourceTree = "<group>"; };
+		590F537618FC1F230099E989 /* GTMMethodCheck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMMethodCheck.h; sourceTree = "<group>"; };
+		590F537718FC1F230099E989 /* GTMMethodCheck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMMethodCheck.m; sourceTree = "<group>"; };
+		590F537818FC1F230099E989 /* GTMNSDictionary+URLArguments.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GTMNSDictionary+URLArguments.h"; sourceTree = "<group>"; };
+		590F537918FC1F230099E989 /* GTMNSDictionary+URLArguments.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "GTMNSDictionary+URLArguments.m"; sourceTree = "<group>"; };
+		590F537A18FC1F230099E989 /* GTMNSString+URLArguments.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GTMNSString+URLArguments.h"; sourceTree = "<group>"; };
+		590F537B18FC1F230099E989 /* GTMNSString+URLArguments.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "GTMNSString+URLArguments.m"; sourceTree = "<group>"; };
+		590F537C18FC1F230099E989 /* GTMOAuth2Authentication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMOAuth2Authentication.h; sourceTree = "<group>"; };
+		590F537D18FC1F230099E989 /* GTMOAuth2Authentication.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMOAuth2Authentication.m; sourceTree = "<group>"; };
+		590F537E18FC1F230099E989 /* GTMOAuth2SignIn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMOAuth2SignIn.h; sourceTree = "<group>"; };
+		590F537F18FC1F230099E989 /* GTMOAuth2SignIn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMOAuth2SignIn.m; sourceTree = "<group>"; };
+		590F538018FC1F230099E989 /* GTMOAuth2ViewControllerTouch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMOAuth2ViewControllerTouch.h; sourceTree = "<group>"; };
+		590F538118FC1F230099E989 /* GTMOAuth2ViewControllerTouch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMOAuth2ViewControllerTouch.m; sourceTree = "<group>"; };
+		590F538218FC1F230099E989 /* GTMObjC2Runtime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMObjC2Runtime.h; sourceTree = "<group>"; };
+		590F538318FC1F230099E989 /* GTMObjC2Runtime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMObjC2Runtime.m; sourceTree = "<group>"; };
+		590F538418FC1F230099E989 /* OpenInChromeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenInChromeController.h; sourceTree = "<group>"; };
+		590F538518FC1F230099E989 /* OpenInChromeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OpenInChromeController.m; sourceTree = "<group>"; };
+		590F538618FC1F230099E989 /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
+		590F538818FC1F230099E989 /* libOAuth.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libOAuth.a; sourceTree = "<group>"; };
+		590F538A18FC1F230099E989 /* NSMutableURLRequest+Parameters.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableURLRequest+Parameters.h"; sourceTree = "<group>"; };
+		590F538B18FC1F230099E989 /* NSString+URLEncoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+URLEncoding.h"; sourceTree = "<group>"; };
+		590F538C18FC1F230099E989 /* NSURL+Base.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURL+Base.h"; sourceTree = "<group>"; };
+		590F538D18FC1F230099E989 /* OAAsynchronousDataFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OAAsynchronousDataFetcher.h; sourceTree = "<group>"; };
+		590F538E18FC1F230099E989 /* OAConsumer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OAConsumer.h; sourceTree = "<group>"; };
+		590F538F18FC1F230099E989 /* OADataFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OADataFetcher.h; sourceTree = "<group>"; };
+		590F539018FC1F230099E989 /* OAHMAC_SHA1SignatureProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OAHMAC_SHA1SignatureProvider.h; sourceTree = "<group>"; };
+		590F539118FC1F230099E989 /* OAMutableURLRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OAMutableURLRequest.h; sourceTree = "<group>"; };
+		590F539218FC1F230099E989 /* OAPlaintextSignatureProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OAPlaintextSignatureProvider.h; sourceTree = "<group>"; };
+		590F539318FC1F230099E989 /* OARequestParameter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OARequestParameter.h; sourceTree = "<group>"; };
+		590F539418FC1F230099E989 /* OAServiceTicket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OAServiceTicket.h; sourceTree = "<group>"; };
+		590F539518FC1F230099E989 /* OASignatureProviding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OASignatureProviding.h; sourceTree = "<group>"; };
+		590F539618FC1F230099E989 /* OAToken.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OAToken.h; sourceTree = "<group>"; };
+		590F539718FC1F230099E989 /* OAToken_KeychainExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OAToken_KeychainExtensions.h; sourceTree = "<group>"; };
+		590F539818FC1F230099E989 /* OAuthConsumer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OAuthConsumer.h; sourceTree = "<group>"; };
+		590F539A18FC1F230099E989 /* SA_OAuthTwitterController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SA_OAuthTwitterController.h; sourceTree = "<group>"; };
+		590F539B18FC1F230099E989 /* SA_OAuthTwitterController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SA_OAuthTwitterController.m; sourceTree = "<group>"; };
+		590F539C18FC1F230099E989 /* SA_OAuthTwitterEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SA_OAuthTwitterEngine.h; sourceTree = "<group>"; };
+		590F539D18FC1F230099E989 /* SA_OAuthTwitterEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SA_OAuthTwitterEngine.m; sourceTree = "<group>"; };
 		59B7B70018FC08FD0012E06F /* NikolaysAssignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NikolaysAssignment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		59B7B70318FC08FD0012E06F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		59B7B70518FC08FD0012E06F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -63,7 +253,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				59B7B70618FC08FD0012E06F /* CoreGraphics.framework in Frameworks */,
+				590F53CD18FC1F230099E989 /* libOAuth.a in Frameworks */,
+				590F532118FC1CFB0099E989 /* libOAuth.a in Frameworks */,
+				590F53A118FC1F230099E989 /* GooglePlus.framework in Frameworks */,
+				590F530718FC188B0099E989 /* FacebookSDK.framework in Frameworks */,
 				59B7B70818FC08FD0012E06F /* UIKit.framework in Frameworks */,
+				590F539F18FC1F230099E989 /* GoogleOpenSource.framework in Frameworks */,
 				59B7B70418FC08FD0012E06F /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -81,6 +276,229 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		590F530518FC188B0099E989 /* ThirdParty */ = {
+			isa = PBXGroup;
+			children = (
+				590F532418FC1F230099E989 /* google-plus-ios-sdk-1.5.1 */,
+				590F530A18FC1CFB0099E989 /* Twitter+OAuth */,
+				590F530618FC188B0099E989 /* FacebookSDK.framework */,
+			);
+			path = ThirdParty;
+			sourceTree = "<group>";
+		};
+		590F530A18FC1CFB0099E989 /* Twitter+OAuth */ = {
+			isa = PBXGroup;
+			children = (
+				590F530B18FC1CFB0099E989 /* libOAuth.a */,
+				590F530C18FC1CFB0099E989 /* OAuthConsumer */,
+				590F531C18FC1CFB0099E989 /* SAOAuthTwitterEngine */,
+			);
+			path = "Twitter+OAuth";
+			sourceTree = "<group>";
+		};
+		590F530C18FC1CFB0099E989 /* OAuthConsumer */ = {
+			isa = PBXGroup;
+			children = (
+				590F530D18FC1CFB0099E989 /* NSMutableURLRequest+Parameters.h */,
+				590F530E18FC1CFB0099E989 /* NSString+URLEncoding.h */,
+				590F530F18FC1CFB0099E989 /* NSURL+Base.h */,
+				590F531018FC1CFB0099E989 /* OAAsynchronousDataFetcher.h */,
+				590F531118FC1CFB0099E989 /* OAConsumer.h */,
+				590F531218FC1CFB0099E989 /* OADataFetcher.h */,
+				590F531318FC1CFB0099E989 /* OAHMAC_SHA1SignatureProvider.h */,
+				590F531418FC1CFB0099E989 /* OAMutableURLRequest.h */,
+				590F531518FC1CFB0099E989 /* OAPlaintextSignatureProvider.h */,
+				590F531618FC1CFB0099E989 /* OARequestParameter.h */,
+				590F531718FC1CFB0099E989 /* OAServiceTicket.h */,
+				590F531818FC1CFB0099E989 /* OASignatureProviding.h */,
+				590F531918FC1CFB0099E989 /* OAToken.h */,
+				590F531A18FC1CFB0099E989 /* OAToken_KeychainExtensions.h */,
+				590F531B18FC1CFB0099E989 /* OAuthConsumer.h */,
+			);
+			path = OAuthConsumer;
+			sourceTree = "<group>";
+		};
+		590F531C18FC1CFB0099E989 /* SAOAuthTwitterEngine */ = {
+			isa = PBXGroup;
+			children = (
+				590F531D18FC1CFB0099E989 /* SA_OAuthTwitterController.h */,
+				590F531E18FC1CFB0099E989 /* SA_OAuthTwitterController.m */,
+				590F531F18FC1CFB0099E989 /* SA_OAuthTwitterEngine.h */,
+				590F532018FC1CFB0099E989 /* SA_OAuthTwitterEngine.m */,
+			);
+			path = SAOAuthTwitterEngine;
+			sourceTree = "<group>";
+		};
+		590F532418FC1F230099E989 /* google-plus-ios-sdk-1.5.1 */ = {
+			isa = PBXGroup;
+			children = (
+				590F532518FC1F230099E989 /* Changelog */,
+				590F532618FC1F230099E989 /* GoogleOpenSource.framework */,
+				590F532718FC1F230099E989 /* GooglePlus.bundle */,
+				590F532818FC1F230099E989 /* GooglePlus.framework */,
+				590F532918FC1F230099E989 /* OpenSource */,
+				590F538618FC1F230099E989 /* README */,
+				590F538718FC1F230099E989 /* Twitter+OAuth */,
+			);
+			path = "google-plus-ios-sdk-1.5.1";
+			sourceTree = "<group>";
+		};
+		590F532918FC1F230099E989 /* OpenSource */ = {
+			isa = PBXGroup;
+			children = (
+				590F532A18FC1F230099E989 /* GoogleOpenSource.h */,
+				590F532B18FC1F230099E989 /* GTL */,
+				590F536818FC1F230099E989 /* GTMDefines.h */,
+				590F536918FC1F230099E989 /* GTMGarbageCollection.h */,
+				590F536A18FC1F230099E989 /* GTMHTTPFetcher.h */,
+				590F536B18FC1F230099E989 /* GTMHTTPFetcher.m */,
+				590F536C18FC1F230099E989 /* GTMHTTPFetcherLogging.h */,
+				590F536D18FC1F230099E989 /* GTMHTTPFetcherLogging.m */,
+				590F536E18FC1F230099E989 /* GTMHTTPFetcherService.h */,
+				590F536F18FC1F230099E989 /* GTMHTTPFetcherService.m */,
+				590F537018FC1F230099E989 /* GTMHTTPFetchHistory.h */,
+				590F537118FC1F230099E989 /* GTMHTTPFetchHistory.m */,
+				590F537218FC1F230099E989 /* GTMHTTPUploadFetcher.h */,
+				590F537318FC1F230099E989 /* GTMHTTPUploadFetcher.m */,
+				590F537418FC1F230099E989 /* GTMLogger.h */,
+				590F537518FC1F230099E989 /* GTMLogger.m */,
+				590F537618FC1F230099E989 /* GTMMethodCheck.h */,
+				590F537718FC1F230099E989 /* GTMMethodCheck.m */,
+				590F537818FC1F230099E989 /* GTMNSDictionary+URLArguments.h */,
+				590F537918FC1F230099E989 /* GTMNSDictionary+URLArguments.m */,
+				590F537A18FC1F230099E989 /* GTMNSString+URLArguments.h */,
+				590F537B18FC1F230099E989 /* GTMNSString+URLArguments.m */,
+				590F537C18FC1F230099E989 /* GTMOAuth2Authentication.h */,
+				590F537D18FC1F230099E989 /* GTMOAuth2Authentication.m */,
+				590F537E18FC1F230099E989 /* GTMOAuth2SignIn.h */,
+				590F537F18FC1F230099E989 /* GTMOAuth2SignIn.m */,
+				590F538018FC1F230099E989 /* GTMOAuth2ViewControllerTouch.h */,
+				590F538118FC1F230099E989 /* GTMOAuth2ViewControllerTouch.m */,
+				590F538218FC1F230099E989 /* GTMObjC2Runtime.h */,
+				590F538318FC1F230099E989 /* GTMObjC2Runtime.m */,
+				590F538418FC1F230099E989 /* OpenInChromeController.h */,
+				590F538518FC1F230099E989 /* OpenInChromeController.m */,
+			);
+			path = OpenSource;
+			sourceTree = "<group>";
+		};
+		590F532B18FC1F230099E989 /* GTL */ = {
+			isa = PBXGroup;
+			children = (
+				590F532C18FC1F230099E989 /* GTLBase64.h */,
+				590F532D18FC1F230099E989 /* GTLBase64.m */,
+				590F532E18FC1F230099E989 /* GTLBatchQuery.h */,
+				590F532F18FC1F230099E989 /* GTLBatchQuery.m */,
+				590F533018FC1F230099E989 /* GTLBatchResult.h */,
+				590F533118FC1F230099E989 /* GTLBatchResult.m */,
+				590F533218FC1F230099E989 /* GTLDateTime.h */,
+				590F533318FC1F230099E989 /* GTLDateTime.m */,
+				590F533418FC1F230099E989 /* GTLDefines.h */,
+				590F533518FC1F230099E989 /* GTLErrorObject.h */,
+				590F533618FC1F230099E989 /* GTLErrorObject.m */,
+				590F533718FC1F230099E989 /* GTLFramework.h */,
+				590F533818FC1F230099E989 /* GTLFramework.m */,
+				590F533918FC1F230099E989 /* GTLJSONParser.h */,
+				590F533A18FC1F230099E989 /* GTLJSONParser.m */,
+				590F533B18FC1F230099E989 /* GTLObject.h */,
+				590F533C18FC1F230099E989 /* GTLObject.m */,
+				590F533D18FC1F230099E989 /* GTLPlus */,
+				590F535D18FC1F230099E989 /* GTLQuery.h */,
+				590F535E18FC1F230099E989 /* GTLQuery.m */,
+				590F535F18FC1F230099E989 /* GTLRuntimeCommon.h */,
+				590F536018FC1F230099E989 /* GTLRuntimeCommon.m */,
+				590F536118FC1F230099E989 /* GTLService.h */,
+				590F536218FC1F230099E989 /* GTLService.m */,
+				590F536318FC1F230099E989 /* GTLTargetNamespace.h */,
+				590F536418FC1F230099E989 /* GTLUploadParameters.h */,
+				590F536518FC1F230099E989 /* GTLUploadParameters.m */,
+				590F536618FC1F230099E989 /* GTLUtilities.h */,
+				590F536718FC1F230099E989 /* GTLUtilities.m */,
+			);
+			path = GTL;
+			sourceTree = "<group>";
+		};
+		590F533D18FC1F230099E989 /* GTLPlus */ = {
+			isa = PBXGroup;
+			children = (
+				590F533E18FC1F230099E989 /* GTLPlus.h */,
+				590F533F18FC1F230099E989 /* GTLPlusAcl.h */,
+				590F534018FC1F230099E989 /* GTLPlusAcl.m */,
+				590F534118FC1F230099E989 /* GTLPlusAclentryResource.h */,
+				590F534218FC1F230099E989 /* GTLPlusAclentryResource.m */,
+				590F534318FC1F230099E989 /* GTLPlusActivity.h */,
+				590F534418FC1F230099E989 /* GTLPlusActivity.m */,
+				590F534518FC1F230099E989 /* GTLPlusActivityFeed.h */,
+				590F534618FC1F230099E989 /* GTLPlusActivityFeed.m */,
+				590F534718FC1F230099E989 /* GTLPlusComment.h */,
+				590F534818FC1F230099E989 /* GTLPlusComment.m */,
+				590F534918FC1F230099E989 /* GTLPlusCommentFeed.h */,
+				590F534A18FC1F230099E989 /* GTLPlusCommentFeed.m */,
+				590F534B18FC1F230099E989 /* GTLPlusConstants.h */,
+				590F534C18FC1F230099E989 /* GTLPlusConstants.m */,
+				590F534D18FC1F230099E989 /* GTLPlusItemScope.h */,
+				590F534E18FC1F230099E989 /* GTLPlusItemScope.m */,
+				590F534F18FC1F230099E989 /* GTLPlusMoment.h */,
+				590F535018FC1F230099E989 /* GTLPlusMoment.m */,
+				590F535118FC1F230099E989 /* GTLPlusMomentsFeed.h */,
+				590F535218FC1F230099E989 /* GTLPlusMomentsFeed.m */,
+				590F535318FC1F230099E989 /* GTLPlusPeopleFeed.h */,
+				590F535418FC1F230099E989 /* GTLPlusPeopleFeed.m */,
+				590F535518FC1F230099E989 /* GTLPlusPerson.h */,
+				590F535618FC1F230099E989 /* GTLPlusPerson.m */,
+				590F535718FC1F230099E989 /* GTLPlusPlace.h */,
+				590F535818FC1F230099E989 /* GTLPlusPlace.m */,
+				590F535918FC1F230099E989 /* GTLQueryPlus.h */,
+				590F535A18FC1F230099E989 /* GTLQueryPlus.m */,
+				590F535B18FC1F230099E989 /* GTLServicePlus.h */,
+				590F535C18FC1F230099E989 /* GTLServicePlus.m */,
+			);
+			path = GTLPlus;
+			sourceTree = "<group>";
+		};
+		590F538718FC1F230099E989 /* Twitter+OAuth */ = {
+			isa = PBXGroup;
+			children = (
+				590F538818FC1F230099E989 /* libOAuth.a */,
+				590F538918FC1F230099E989 /* OAuthConsumer */,
+				590F539918FC1F230099E989 /* SAOAuthTwitterEngine */,
+			);
+			path = "Twitter+OAuth";
+			sourceTree = "<group>";
+		};
+		590F538918FC1F230099E989 /* OAuthConsumer */ = {
+			isa = PBXGroup;
+			children = (
+				590F538A18FC1F230099E989 /* NSMutableURLRequest+Parameters.h */,
+				590F538B18FC1F230099E989 /* NSString+URLEncoding.h */,
+				590F538C18FC1F230099E989 /* NSURL+Base.h */,
+				590F538D18FC1F230099E989 /* OAAsynchronousDataFetcher.h */,
+				590F538E18FC1F230099E989 /* OAConsumer.h */,
+				590F538F18FC1F230099E989 /* OADataFetcher.h */,
+				590F539018FC1F230099E989 /* OAHMAC_SHA1SignatureProvider.h */,
+				590F539118FC1F230099E989 /* OAMutableURLRequest.h */,
+				590F539218FC1F230099E989 /* OAPlaintextSignatureProvider.h */,
+				590F539318FC1F230099E989 /* OARequestParameter.h */,
+				590F539418FC1F230099E989 /* OAServiceTicket.h */,
+				590F539518FC1F230099E989 /* OASignatureProviding.h */,
+				590F539618FC1F230099E989 /* OAToken.h */,
+				590F539718FC1F230099E989 /* OAToken_KeychainExtensions.h */,
+				590F539818FC1F230099E989 /* OAuthConsumer.h */,
+			);
+			path = OAuthConsumer;
+			sourceTree = "<group>";
+		};
+		590F539918FC1F230099E989 /* SAOAuthTwitterEngine */ = {
+			isa = PBXGroup;
+			children = (
+				590F539A18FC1F230099E989 /* SA_OAuthTwitterController.h */,
+				590F539B18FC1F230099E989 /* SA_OAuthTwitterController.m */,
+				590F539C18FC1F230099E989 /* SA_OAuthTwitterEngine.h */,
+				590F539D18FC1F230099E989 /* SA_OAuthTwitterEngine.m */,
+			);
+			path = SAOAuthTwitterEngine;
+			sourceTree = "<group>";
+		};
 		59B7B6F718FC08FD0012E06F = {
 			isa = PBXGroup;
 			children = (
@@ -114,6 +532,7 @@
 		59B7B70918FC08FD0012E06F /* NikolaysAssignment */ = {
 			isa = PBXGroup;
 			children = (
+				590F530518FC188B0099E989 /* ThirdParty */,
 				59B7B71218FC08FD0012E06F /* NAAppDelegate.h */,
 				59B7B71318FC08FD0012E06F /* NAAppDelegate.m */,
 				59B7B71518FC08FD0012E06F /* Main_iPhone.storyboard */,
@@ -236,6 +655,9 @@
 				59B7B71F18FC08FD0012E06F /* Images.xcassets in Resources */,
 				59B7B71718FC08FD0012E06F /* Main_iPhone.storyboard in Resources */,
 				59B7B70E18FC08FD0012E06F /* InfoPlist.strings in Resources */,
+				590F53A018FC1F230099E989 /* GooglePlus.bundle in Resources */,
+				590F539E18FC1F230099E989 /* Changelog in Resources */,
+				590F53CC18FC1F230099E989 /* README in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,8 +676,54 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				590F53AD18FC1F230099E989 /* GTLPlusActivityFeed.m in Sources */,
+				590F53CE18FC1F230099E989 /* SA_OAuthTwitterController.m in Sources */,
 				59B7B71D18FC08FD0012E06F /* NAViewController.m in Sources */,
+				590F53B418FC1F230099E989 /* GTLPlusPeopleFeed.m in Sources */,
+				590F53B818FC1F230099E989 /* GTLServicePlus.m in Sources */,
+				590F53A718FC1F230099E989 /* GTLFramework.m in Sources */,
+				590F532218FC1CFB0099E989 /* SA_OAuthTwitterController.m in Sources */,
+				590F53A918FC1F230099E989 /* GTLObject.m in Sources */,
+				590F53C818FC1F230099E989 /* GTMOAuth2SignIn.m in Sources */,
+				590F53AE18FC1F230099E989 /* GTLPlusComment.m in Sources */,
+				590F53B618FC1F230099E989 /* GTLPlusPlace.m in Sources */,
+				590F53C318FC1F230099E989 /* GTMLogger.m in Sources */,
+				590F53AC18FC1F230099E989 /* GTLPlusActivity.m in Sources */,
+				590F53C718FC1F230099E989 /* GTMOAuth2Authentication.m in Sources */,
+				590F53C618FC1F230099E989 /* GTMNSString+URLArguments.m in Sources */,
+				590F53B118FC1F230099E989 /* GTLPlusItemScope.m in Sources */,
+				590F53BD18FC1F230099E989 /* GTLUtilities.m in Sources */,
+				590F53AA18FC1F230099E989 /* GTLPlusAcl.m in Sources */,
+				590F53A318FC1F230099E989 /* GTLBatchQuery.m in Sources */,
+				590F53A818FC1F230099E989 /* GTLJSONParser.m in Sources */,
+				590F53B918FC1F230099E989 /* GTLQuery.m in Sources */,
+				590F53C018FC1F230099E989 /* GTMHTTPFetcherService.m in Sources */,
+				590F53C418FC1F230099E989 /* GTMMethodCheck.m in Sources */,
+				590F53C218FC1F230099E989 /* GTMHTTPUploadFetcher.m in Sources */,
+				590F53A418FC1F230099E989 /* GTLBatchResult.m in Sources */,
+				590F53C918FC1F230099E989 /* GTMOAuth2ViewControllerTouch.m in Sources */,
+				590F53BC18FC1F230099E989 /* GTLUploadParameters.m in Sources */,
+				590F53BE18FC1F230099E989 /* GTMHTTPFetcher.m in Sources */,
+				590F532318FC1CFB0099E989 /* SA_OAuthTwitterEngine.m in Sources */,
+				590F53A518FC1F230099E989 /* GTLDateTime.m in Sources */,
+				590F53CF18FC1F230099E989 /* SA_OAuthTwitterEngine.m in Sources */,
+				590F53BB18FC1F230099E989 /* GTLService.m in Sources */,
+				590F53CA18FC1F230099E989 /* GTMObjC2Runtime.m in Sources */,
 				59B7B71018FC08FD0012E06F /* main.m in Sources */,
+				590F53C518FC1F230099E989 /* GTMNSDictionary+URLArguments.m in Sources */,
+				590F53A618FC1F230099E989 /* GTLErrorObject.m in Sources */,
+				590F53B318FC1F230099E989 /* GTLPlusMomentsFeed.m in Sources */,
+				590F53AB18FC1F230099E989 /* GTLPlusAclentryResource.m in Sources */,
+				590F53B218FC1F230099E989 /* GTLPlusMoment.m in Sources */,
+				590F53AF18FC1F230099E989 /* GTLPlusCommentFeed.m in Sources */,
+				590F53B718FC1F230099E989 /* GTLQueryPlus.m in Sources */,
+				590F53BA18FC1F230099E989 /* GTLRuntimeCommon.m in Sources */,
+				590F53CB18FC1F230099E989 /* OpenInChromeController.m in Sources */,
+				590F53B018FC1F230099E989 /* GTLPlusConstants.m in Sources */,
+				590F53B518FC1F230099E989 /* GTLPlusPerson.m in Sources */,
+				590F53A218FC1F230099E989 /* GTLBase64.m in Sources */,
+				590F53C118FC1F230099E989 /* GTMHTTPFetchHistory.m in Sources */,
+				590F53BF18FC1F230099E989 /* GTMHTTPFetcherLogging.m in Sources */,
 				59B7B71418FC08FD0012E06F /* NAAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -391,9 +859,19 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/NikolaysAssignment/ThirdParty",
+					"$(PROJECT_DIR)/NikolaysAssignment/ThirdParty/google-plus-ios-sdk-1.5.1",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "NikolaysAssignment/NikolaysAssignment-Prefix.pch";
 				INFOPLIST_FILE = "NikolaysAssignment/NikolaysAssignment-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/NikolaysAssignment/ThirdParty/Twitter+OAuth",
+					"$(PROJECT_DIR)/NikolaysAssignment/ThirdParty/google-plus-ios-sdk-1.5.1/Twitter+OAuth",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -404,9 +882,19 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/NikolaysAssignment/ThirdParty",
+					"$(PROJECT_DIR)/NikolaysAssignment/ThirdParty/google-plus-ios-sdk-1.5.1",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "NikolaysAssignment/NikolaysAssignment-Prefix.pch";
 				INFOPLIST_FILE = "NikolaysAssignment/NikolaysAssignment-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/NikolaysAssignment/ThirdParty/Twitter+OAuth",
+					"$(PROJECT_DIR)/NikolaysAssignment/ThirdParty/google-plus-ios-sdk-1.5.1/Twitter+OAuth",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -471,6 +959,7 @@
 				59B7B73718FC08FD0012E06F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		59B7B73818FC08FD0012E06F /* Build configuration list for PBXNativeTarget "NikolaysAssignmentTests" */ = {
 			isa = XCConfigurationList;
@@ -479,6 +968,7 @@
 				59B7B73A18FC08FD0012E06F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
