@@ -32,6 +32,12 @@
 		590D065E18FC37F900A6C101 /* SA_OAuthTwitterEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 590D064118FC37F900A6C101 /* SA_OAuthTwitterEngine.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		590D065F18FC37F900A6C101 /* libYAJLiOSDevice.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 590D064318FC37F900A6C101 /* libYAJLiOSDevice.a */; };
 		590D066018FC37F900A6C101 /* libYAJLiOSSimulator.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 590D064418FC37F900A6C101 /* libYAJLiOSSimulator.a */; };
+		590D066418FC404F00A6C101 /* NADataFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 590D066318FC404F00A6C101 /* NADataFetcher.m */; };
+		590D066818FC458400A6C101 /* NAFacebookDataFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 590D066718FC458400A6C101 /* NAFacebookDataFetcher.m */; };
+		590D066B18FC459F00A6C101 /* NATwitterDataFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 590D066A18FC459F00A6C101 /* NATwitterDataFetcher.m */; };
+		590D066E18FC45C900A6C101 /* NAGooglePlusDataFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 590D066D18FC45C900A6C101 /* NAGooglePlusDataFetcher.m */; };
+		590D067218FC474000A6C101 /* NAFeedTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 590D067118FC474000A6C101 /* NAFeedTableViewController.m */; };
+		590D067618FC4BDA00A6C101 /* NAFeedItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 590D067518FC4BDA00A6C101 /* NAFeedItem.m */; };
 		590F530718FC188B0099E989 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 590F530618FC188B0099E989 /* FacebookSDK.framework */; };
 		590F539E18FC1F230099E989 /* Changelog in Resources */ = {isa = PBXBuildFile; fileRef = 590F532518FC1F230099E989 /* Changelog */; };
 		590F539F18FC1F230099E989 /* GoogleOpenSource.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 590F532618FC1F230099E989 /* GoogleOpenSource.framework */; };
@@ -179,6 +185,18 @@
 		590D064518FC37F900A6C101 /* yajl_common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = yajl_common.h; sourceTree = "<group>"; };
 		590D064618FC37F900A6C101 /* yajl_gen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = yajl_gen.h; sourceTree = "<group>"; };
 		590D064718FC37F900A6C101 /* yajl_parse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = yajl_parse.h; sourceTree = "<group>"; };
+		590D066218FC404F00A6C101 /* NADataFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NADataFetcher.h; sourceTree = "<group>"; };
+		590D066318FC404F00A6C101 /* NADataFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NADataFetcher.m; sourceTree = "<group>"; };
+		590D066618FC458400A6C101 /* NAFacebookDataFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NAFacebookDataFetcher.h; sourceTree = "<group>"; };
+		590D066718FC458400A6C101 /* NAFacebookDataFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NAFacebookDataFetcher.m; sourceTree = "<group>"; };
+		590D066918FC459F00A6C101 /* NATwitterDataFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NATwitterDataFetcher.h; sourceTree = "<group>"; };
+		590D066A18FC459F00A6C101 /* NATwitterDataFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NATwitterDataFetcher.m; sourceTree = "<group>"; };
+		590D066C18FC45C900A6C101 /* NAGooglePlusDataFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NAGooglePlusDataFetcher.h; sourceTree = "<group>"; };
+		590D066D18FC45C900A6C101 /* NAGooglePlusDataFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NAGooglePlusDataFetcher.m; sourceTree = "<group>"; };
+		590D067018FC474000A6C101 /* NAFeedTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NAFeedTableViewController.h; sourceTree = "<group>"; };
+		590D067118FC474000A6C101 /* NAFeedTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NAFeedTableViewController.m; sourceTree = "<group>"; };
+		590D067418FC4BDA00A6C101 /* NAFeedItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NAFeedItem.h; sourceTree = "<group>"; };
+		590D067518FC4BDA00A6C101 /* NAFeedItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NAFeedItem.m; sourceTree = "<group>"; };
 		590F530618FC188B0099E989 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
 		590F532518FC1F230099E989 /* Changelog */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Changelog; sourceTree = "<group>"; };
 		590F532618FC1F230099E989 /* GoogleOpenSource.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleOpenSource.framework; sourceTree = "<group>"; };
@@ -462,6 +480,39 @@
 			path = yajl;
 			sourceTree = "<group>";
 		};
+		590D066118FC3F6200A6C101 /* DataFetchers */ = {
+			isa = PBXGroup;
+			children = (
+				590D066218FC404F00A6C101 /* NADataFetcher.h */,
+				590D066318FC404F00A6C101 /* NADataFetcher.m */,
+				590D066618FC458400A6C101 /* NAFacebookDataFetcher.h */,
+				590D066718FC458400A6C101 /* NAFacebookDataFetcher.m */,
+				590D066918FC459F00A6C101 /* NATwitterDataFetcher.h */,
+				590D066A18FC459F00A6C101 /* NATwitterDataFetcher.m */,
+				590D066C18FC45C900A6C101 /* NAGooglePlusDataFetcher.h */,
+				590D066D18FC45C900A6C101 /* NAGooglePlusDataFetcher.m */,
+			);
+			path = DataFetchers;
+			sourceTree = "<group>";
+		};
+		590D066F18FC46E700A6C101 /* Feed */ = {
+			isa = PBXGroup;
+			children = (
+				590D067018FC474000A6C101 /* NAFeedTableViewController.h */,
+				590D067118FC474000A6C101 /* NAFeedTableViewController.m */,
+			);
+			path = Feed;
+			sourceTree = "<group>";
+		};
+		590D067318FC4B8F00A6C101 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				590D067418FC4BDA00A6C101 /* NAFeedItem.h */,
+				590D067518FC4BDA00A6C101 /* NAFeedItem.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		590F530518FC188B0099E989 /* ThirdParty */ = {
 			isa = PBXGroup;
 			children = (
@@ -664,6 +715,9 @@
 		59B7B70918FC08FD0012E06F /* NikolaysAssignment */ = {
 			isa = PBXGroup;
 			children = (
+				590D067318FC4B8F00A6C101 /* Model */,
+				590D066F18FC46E700A6C101 /* Feed */,
+				590D066118FC3F6200A6C101 /* DataFetchers */,
 				590F530518FC188B0099E989 /* ThirdParty */,
 				59B7B71218FC08FD0012E06F /* NAAppDelegate.h */,
 				59B7B71318FC08FD0012E06F /* NAAppDelegate.m */,
@@ -816,13 +870,17 @@
 				590F53A718FC1F230099E989 /* GTLFramework.m in Sources */,
 				590F53A918FC1F230099E989 /* GTLObject.m in Sources */,
 				590D065B18FC37F900A6C101 /* NSString+UUID.m in Sources */,
+				590D066418FC404F00A6C101 /* NADataFetcher.m in Sources */,
 				590D064B18FC37F900A6C101 /* MGTwitterMessagesLibXMLParser.m in Sources */,
 				590F53C818FC1F230099E989 /* GTMOAuth2SignIn.m in Sources */,
 				590F53AE18FC1F230099E989 /* GTLPlusComment.m in Sources */,
 				590D065718FC37F900A6C101 /* MGTwitterUsersYAJLParser.m in Sources */,
+				590D066818FC458400A6C101 /* NAFacebookDataFetcher.m in Sources */,
 				590D064818FC37F900A6C101 /* MGTwitterEngine.m in Sources */,
 				590D064A18FC37F900A6C101 /* MGTwitterLibXMLParser.m in Sources */,
+				590D067218FC474000A6C101 /* NAFeedTableViewController.m in Sources */,
 				590D064E18FC37F900A6C101 /* MGTwitterMiscLibXMLParser.m in Sources */,
+				590D066E18FC45C900A6C101 /* NAGooglePlusDataFetcher.m in Sources */,
 				590F53B618FC1F230099E989 /* GTLPlusPlace.m in Sources */,
 				590F53C318FC1F230099E989 /* GTMLogger.m in Sources */,
 				590F53AC18FC1F230099E989 /* GTLPlusActivity.m in Sources */,
@@ -854,6 +912,8 @@
 				590F53CA18FC1F230099E989 /* GTMObjC2Runtime.m in Sources */,
 				59B7B71018FC08FD0012E06F /* main.m in Sources */,
 				590D065418FC37F900A6C101 /* MGTwitterStatusesYAJLParser.m in Sources */,
+				590D067618FC4BDA00A6C101 /* NAFeedItem.m in Sources */,
+				590D066B18FC459F00A6C101 /* NATwitterDataFetcher.m in Sources */,
 				590F53C518FC1F230099E989 /* GTMNSDictionary+URLArguments.m in Sources */,
 				590F53A618FC1F230099E989 /* GTLErrorObject.m in Sources */,
 				590D065A18FC37F900A6C101 /* NSData+Base64.m in Sources */,
