@@ -24,6 +24,15 @@
     return self;
 }
 
+- (void)setDataFetcher:(id)dataFetcher {
+    if (dataFetcher != _dataFetcher)
+    {
+        [dataFetcher fetchDataWithFinishBlock:^(NSData *fetchedData, NSError *error, BOOL cancelled) {
+            
+        }];
+    }
+}
+
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     self.navigationController.navigationBar.hidden = NO;

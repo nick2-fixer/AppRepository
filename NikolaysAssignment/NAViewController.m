@@ -8,6 +8,9 @@
 
 #import "NAViewController.h"
 #import "NAFeedTableViewController.h"
+#import "NAFacebookDataFetcher.h"
+#import "NATwitterDataFetcher.h"
+#import "NAGooglePlusDataFetcher.h"
 
 typedef enum {
     NAFacebookButton,
@@ -35,13 +38,37 @@ typedef enum {
     // Dispose of any resources that can be recreated.
 }
 
-- (IBAction)didPressButton:(id)sender {
+#pragma mark - Navigation
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
     if (_buttons) {
-        NSUInteger index = [_buttons indexOfObject:sender];
+        NSUInteger buttonIndex = [_buttons indexOfObject:sender];
+        
+        NAFeedTableViewController *feedController = [segue destinationViewController];
+        
+        id specificDataFetcher = nil;
+        
+        switch (buttonIndex) {
+            case NAFacebookButton:
+                specificDataFetcher = [NAFacebookDataFetcher sharedInstance];
+                break;
+                
+            case NATwitterButton:
+                specificDataFetcher = [NATwitterDataFetcher sharedInstance];
+                break;
+                
+            case NAGooglePlusButton:
+                specificDataFetcher = [NAGooglePlusDataFetcher sharedInstance];
+                break;
+                
+            default:
+                break;
+                
+        }
+        
+        feedController.dataFetcher = specificDataFetcher;
     }
-    
-    NAFeedTableViewController *feedController = [[NAFeedTableViewController alloc] initWithStyle:UITableViewStylePlain];
-    [self.navigationController pushViewController:feedController animated:YES];
 }
 
 @end

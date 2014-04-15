@@ -10,4 +10,16 @@
 
 @implementation NATwitterDataFetcher
 
++ (instancetype)sharedInstance {
+    static dispatch_once_t token;
+    static NATwitterDataFetcher *sharedFetcher = nil;
+    
+    dispatch_once(&token, ^{
+        sharedFetcher = [[NATwitterDataFetcher alloc] init];
+    });
+    
+    return sharedFetcher;
+}
+
+
 @end
