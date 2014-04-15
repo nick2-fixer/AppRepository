@@ -7,8 +7,17 @@
 //
 
 #import "NAViewController.h"
+#import "NAFeedTableViewController.h"
+
+typedef enum {
+    NAFacebookButton,
+    NATwitterButton,
+    NAGooglePlusButton
+} NASocialButtons;
 
 @interface NAViewController ()
+
+@property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *buttons;
 
 @end
 
@@ -17,13 +26,22 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    self.navigationController.navigationBar.hidden = YES;
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (IBAction)didPressButton:(id)sender {
+    if (_buttons) {
+        NSUInteger index = [_buttons indexOfObject:sender];
+    }
+    
+    NAFeedTableViewController *feedController = [[NAFeedTableViewController alloc] initWithStyle:UITableViewStylePlain];
+    [self.navigationController pushViewController:feedController animated:YES];
 }
 
 @end
