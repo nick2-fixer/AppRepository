@@ -27,10 +27,16 @@
 - (void)setDataFetcher:(id)dataFetcher {
     if (dataFetcher != _dataFetcher)
     {
-        [dataFetcher fetchDataWithFinishBlock:^(NSData *fetchedData, NSError *error, BOOL cancelled) {
+        _dataFetcher = dataFetcher;
+        [_dataFetcher fetchDataWithFinishBlock:^(NSData *fetchedData, NSError *error, BOOL cancelled) {
             
         }];
     }
+}
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    self.title = @"Feed";
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -43,6 +49,7 @@
     
     if ([self isMovingFromParentViewController]) {
         self.navigationController.navigationBar.hidden = YES;
+        _dataFetcher = nil;
     }
 }
 

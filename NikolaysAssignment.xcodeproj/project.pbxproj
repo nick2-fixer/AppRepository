@@ -88,6 +88,9 @@
 		590F53CC18FC1F230099E989 /* README in Resources */ = {isa = PBXBuildFile; fileRef = 590F538618FC1F230099E989 /* README */; };
 		590F53CD18FC1F230099E989 /* libOAuth.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 590F538818FC1F230099E989 /* libOAuth.a */; };
 		590F543118FC29A90099E989 /* libxml2.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 590F543018FC29A90099E989 /* libxml2.2.dylib */; };
+		5950C9E618FD86F000677162 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5950C9E518FD86F000677162 /* CoreText.framework */; };
+		5950C9E818FD86FC00677162 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5950C9E718FD86FC00677162 /* CoreMotion.framework */; };
+		5950C9EA18FD870D00677162 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5950C9E918FD870D00677162 /* AssetsLibrary.framework */; };
 		59B7B70418FC08FD0012E06F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59B7B70318FC08FD0012E06F /* Foundation.framework */; };
 		59B7B70618FC08FD0012E06F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59B7B70518FC08FD0012E06F /* CoreGraphics.framework */; };
 		59B7B70818FC08FD0012E06F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59B7B70718FC08FD0012E06F /* UIKit.framework */; };
@@ -310,6 +313,9 @@
 		590F539718FC1F230099E989 /* OAToken_KeychainExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OAToken_KeychainExtensions.h; sourceTree = "<group>"; };
 		590F539818FC1F230099E989 /* OAuthConsumer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OAuthConsumer.h; sourceTree = "<group>"; };
 		590F543018FC29A90099E989 /* libxml2.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.2.dylib; path = usr/lib/libxml2.2.dylib; sourceTree = SDKROOT; };
+		5950C9E518FD86F000677162 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		5950C9E718FD86FC00677162 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		5950C9E918FD870D00677162 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
 		59B7B70018FC08FD0012E06F /* NikolaysAssignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NikolaysAssignment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		59B7B70318FC08FD0012E06F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		59B7B70518FC08FD0012E06F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -337,6 +343,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5950C9EA18FD870D00677162 /* AssetsLibrary.framework in Frameworks */,
+				5950C9E818FD86FC00677162 /* CoreMotion.framework in Frameworks */,
+				5950C9E618FD86F000677162 /* CoreText.framework in Frameworks */,
 				590F543118FC29A90099E989 /* libxml2.2.dylib in Frameworks */,
 				59B7B70618FC08FD0012E06F /* CoreGraphics.framework in Frameworks */,
 				590D065C18FC37F900A6C101 /* libOAuth.a in Frameworks */,
@@ -703,6 +712,9 @@
 		59B7B70218FC08FD0012E06F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				5950C9E918FD870D00677162 /* AssetsLibrary.framework */,
+				5950C9E718FD86FC00677162 /* CoreMotion.framework */,
+				5950C9E518FD86F000677162 /* CoreText.framework */,
 				590F543018FC29A90099E989 /* libxml2.2.dylib */,
 				59B7B70318FC08FD0012E06F /* Foundation.framework */,
 				59B7B70518FC08FD0012E06F /* CoreGraphics.framework */,
