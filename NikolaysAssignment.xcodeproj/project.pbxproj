@@ -91,6 +91,7 @@
 		5950C9E618FD86F000677162 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5950C9E518FD86F000677162 /* CoreText.framework */; };
 		5950C9E818FD86FC00677162 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5950C9E718FD86FC00677162 /* CoreMotion.framework */; };
 		5950C9EA18FD870D00677162 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5950C9E918FD870D00677162 /* AssetsLibrary.framework */; };
+		59727E3218FE824000E989A9 /* NAFeedData.m in Sources */ = {isa = PBXBuildFile; fileRef = 59727E3118FE824000E989A9 /* NAFeedData.m */; };
 		59B7B70418FC08FD0012E06F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59B7B70318FC08FD0012E06F /* Foundation.framework */; };
 		59B7B70618FC08FD0012E06F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59B7B70518FC08FD0012E06F /* CoreGraphics.framework */; };
 		59B7B70818FC08FD0012E06F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59B7B70718FC08FD0012E06F /* UIKit.framework */; };
@@ -316,6 +317,8 @@
 		5950C9E518FD86F000677162 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
 		5950C9E718FD86FC00677162 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 		5950C9E918FD870D00677162 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		59727E3018FE824000E989A9 /* NAFeedData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NAFeedData.h; sourceTree = "<group>"; };
+		59727E3118FE824000E989A9 /* NAFeedData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NAFeedData.m; sourceTree = "<group>"; };
 		59B7B70018FC08FD0012E06F /* NikolaysAssignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NikolaysAssignment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		59B7B70318FC08FD0012E06F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		59B7B70518FC08FD0012E06F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -509,6 +512,8 @@
 			children = (
 				590D067018FC474000A6C101 /* NAFeedTableViewController.h */,
 				590D067118FC474000A6C101 /* NAFeedTableViewController.m */,
+				59727E3018FE824000E989A9 /* NAFeedData.h */,
+				59727E3118FE824000E989A9 /* NAFeedData.m */,
 			);
 			path = Feed;
 			sourceTree = "<group>";
@@ -910,6 +915,7 @@
 				590F53C018FC1F230099E989 /* GTMHTTPFetcherService.m in Sources */,
 				590D064D18FC37F900A6C101 /* MGTwitterMessagesYAJLParser.m in Sources */,
 				590F53C418FC1F230099E989 /* GTMMethodCheck.m in Sources */,
+				59727E3218FE824000E989A9 /* NAFeedData.m in Sources */,
 				590F53C218FC1F230099E989 /* GTMHTTPUploadFetcher.m in Sources */,
 				590F53A418FC1F230099E989 /* GTLBatchResult.m in Sources */,
 				590F53C918FC1F230099E989 /* GTMOAuth2ViewControllerTouch.m in Sources */,

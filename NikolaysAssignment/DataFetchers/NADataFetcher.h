@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "NAFeedData.h"
 
 static const NSString *dataFetcherErrorDomain = @"DataFetcherErrorDomain";
 
@@ -24,6 +25,6 @@ static const NSString *dataFetcherErrorDomain = @"DataFetcherErrorDomain";
  @abstract A Stub for any actual fetching
  @result A completion block with fetched data, error data and 'cancelled' status of fetch job
  */
-- (void)fetchDataWithFinishBlock:(void(^)(NSData *fetchedData, NSError *error, BOOL cancelled))finishBlock;
+- (void)fetchDataWithFinishBlock:(void(^)(NSArray *array, NSError *error, BOOL cancelled))finishBlock;
 
 @end
