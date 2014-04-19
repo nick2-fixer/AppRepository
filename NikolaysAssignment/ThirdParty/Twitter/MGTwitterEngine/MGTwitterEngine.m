@@ -939,8 +939,8 @@
 
 - (NSString *)getFollowedTimelineSinceID:(unsigned long)sinceID withMaximumID:(unsigned long)maxID startingAtPage:(int)page count:(int)count
 {
-	NSString *path = [NSString stringWithFormat:@"statuses/friends_timeline.%@", API_FORMAT];
-
+	NSString *path = [NSString stringWithFormat:@"statuses/home_timeline.%@", API_FORMAT];
+    
     NSMutableDictionary *params = [NSMutableDictionary dictionaryWithCapacity:0];
     if (sinceID > 0) {
         [params setObject:[NSString stringWithFormat:@"%lu", sinceID] forKey:@"since_id"];
