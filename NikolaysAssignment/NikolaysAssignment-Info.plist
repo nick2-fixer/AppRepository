@@ -29,6 +29,7 @@
 			<string>Test.NikolaysAssignment</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
+				<string>fb1404519476488885</string>
 				<string>Test.NikolaysAssignment</string>
 			</array>
 		</dict>
