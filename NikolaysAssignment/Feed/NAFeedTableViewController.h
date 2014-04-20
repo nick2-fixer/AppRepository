@@ -9,8 +9,8 @@
 #import <UIKit/UIKit.h>
 #import "NADataFetcher.h"
 
-@interface NAFeedTableViewController : UITableViewController
+@interface NAFeedTableViewController : UITableViewController <NADataFetcherDelegate>
 
-@property (strong, nonatomic) id dataFetcher;
+@property (strong, nonatomic) NADataFetcher *dataFetcher;
 
 @end

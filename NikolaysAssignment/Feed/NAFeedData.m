@@ -22,7 +22,14 @@
     return sharedInstance;
 }
 
-- (void)setFeedItemsArray:(NSArray *)array
+- (id)init {
+    if (self = [super init]) {
+        _feedItemsArray = [NSMutableArray arrayWithCapacity:0];
+    }
+    return self;
+}
+
+- (void)setFeedItemsArray:(NSMutableArray *)array
 {
     if (_feedItemsArray != array ) {
         _feedItemsArray = array;

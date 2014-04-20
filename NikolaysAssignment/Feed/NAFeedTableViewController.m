@@ -7,32 +7,12 @@
 //
 
 #import "NAFeedTableViewController.h"
+#import "NAFeedCell.h"
+#import "NAFeedData.h"
 
-@interface NAFeedTableViewController ()
-
-@end
+static const CGFloat rowHeight = 80.0f;
 
 @implementation NAFeedTableViewController
-
-- (id)initWithStyle:(UITableViewStyle)style
-{
-    self = [super initWithStyle:style];
-    if (self) {
-        // Custom initialization
-    }
-    
-    return self;
-}
-
-- (void)setDataFetcher:(id)dataFetcher {
-    if (dataFetcher != _dataFetcher)
-    {
-        _dataFetcher = dataFetcher;
-        [_dataFetcher fetchDataWithFinishBlock:^(NSData *fetchedData, NSError *error, BOOL cancelled) {
-            
-        }];
-    }
-}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -56,38 +36,65 @@
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
+    [[NAFeedData sharedInstance] setFeedItemsArray:[NSMutableArray arrayWithCapacity:0]];
+}
+
+#pragma mark - Fetch data
+
+- (void)setDataFetcher:(id)dataFetcher
+{
+    if ((dataFetcher != _dataFetcher) && (dataFetcher != nil))
+    {
+        _dataFetcher = dataFetcher;
+        _dataFetcher.delegate = self;
+        [_dataFetcher attemptDataFetch];
+    }
+}
+
+#pragma mark - NADataFetcherDelegate
+
+- (void)didFailDataFetchWithError:(NSError *)error {
+    //TODO: show alertView
+}
+
+- (void)fetchSucceeded {
+    [self updateUI];
+}
+
+#pragma mark - Update UI
+
+- (void)updateUI {
+    
+    BOOL feedArrayIsEmpty = [[[NAFeedData sharedInstance] feedItemsArray] count] < 1;
+    self.tableView.hidden = feedArrayIsEmpty;
 }
 
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-    return 0;
+    return 1;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return rowHeight;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 0;
+    return [[[NAFeedData sharedInstance] feedItemsArray] count];
 }
-
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *CellIdentifier = @"Cell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+    NAFeedCell *cell = (NAFeedCell*)[tableView dequeueReusableCellWithIdentifier:@"FeedCell"];
+    NAFeedItem *feedItem = [[NAFeedData sharedInstance].feedItemsArray objectAtIndex:indexPath.row];
+    
+    cell.feedItemAuthorLabel.text = feedItem.author;
+    cell.feedItemText.text = feedItem.bodyText;
     
     return cell;
 }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

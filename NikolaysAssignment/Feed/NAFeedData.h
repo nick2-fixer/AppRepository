@@ -18,6 +18,6 @@
  */
 + (instancetype)sharedInstance;
 
-@property (strong, nonatomic) NSArray *feedItemsArray;
+@property (strong, nonatomic) NSMutableArray *feedItemsArray;
 
 @end
