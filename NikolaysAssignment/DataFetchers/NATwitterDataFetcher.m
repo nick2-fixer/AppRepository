@@ -10,7 +10,6 @@
 #import "SA_OAuthTwitterEngine.h"
 #import "SA_OAuthTwitterController.h"
 
-static NSString *userName = @"nick130586";
 static NSString *consumerKey = @"XzXRNM5ogp2kdFHQtpz8hlvTR";
 static NSString *consumerSecret = @"NyE32ws2i1dfZHFvr5J4daDlUSsjrd8Bxi5NxENTiiM7fXfF4Z";
 
@@ -45,6 +44,8 @@ static NSString *consumerSecret = @"NyE32ws2i1dfZHFvr5J4daDlUSsjrd8Bxi5NxENTiiM7
     if (controller){
         [rootViewController presentViewController:controller animated:YES completion:nil];
     }
+    
+    [self attemptDataFetch];
 }
 
 - (void)attemptDataFetch {
