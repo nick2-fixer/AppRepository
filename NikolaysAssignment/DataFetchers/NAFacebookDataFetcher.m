@@ -28,19 +28,29 @@
     return sharedFetcher;
 }
 
-- (void)fetchDataWithFinishBlock:(void (^)(NSData *data, NSError *error, BOOL))finishBlock {
+- (void)attemptDataFetch {
     
-    NSString *fqlQuery = @"SELECT post_id, created_time, type, attachment FROM stream WHERE filter_key in (SELECT filter_key FROM stream_filter WHERE uid=me() AND type='newsfeed') AND is_hidden = 0 LIMIT 20";
+    NSString *fqlQuery = @"SELECT post_id, created_time, type, attachment FROM stream WHERE filter_key in (SELECT filter_key FROM stream_filter WHERE uid=me() AND type='newsfeed') AND is_hidden = 0";
     
     [FBRequestConnection startWithGraphPath:@"/fql"
                                  parameters:[NSDictionary dictionaryWithObjectsAndKeys: fqlQuery, @"q", nil]
                                  HTTPMethod:@"GET"
                           completionHandler:^(FBRequestConnection *connection, id result, NSError *error)
      {
-         if (error)
-             NSLog(@"Error: %@", [error localizedDescription]);
-         else
-             NSLog(@"Result: %@", result);
+         
+         
+         if (error) {
+             [self.delegate didFailDataFetchWithError:[NSError errorWithDomain:dataFetcherErrorDomain code:2 userInfo:nil]];
+         }
+         else {
+             for (FBGraphObject *graphObject in result) {
+                 
+                 DLog(@"%@", graphObject);
+                 
+                 [[NAFeedData sharedInstance] setFeedItemsArray:[NSMutableArray arrayWithCapacity:0]];
+                 [self.delegate fetchSucceeded];
+             }
+         }
      }];
 }
 

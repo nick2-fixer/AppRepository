@@ -21,8 +21,8 @@
     return sharedFetcher;
 }
 
-- (void)fetchDataWithFinishBlock:(void(^)(NSArray *fetchedData, NSError *error, BOOL cancelled))finishBlock {
-        //is overriden in subclasses
+- (void)attemptDataFetch {
+    //is overriden in subclasses
 }
 
 @end

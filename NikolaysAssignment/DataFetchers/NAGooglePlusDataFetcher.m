@@ -44,14 +44,17 @@ static NSString *clientId = @"1016578238765.apps.googleusercontent.com";
 
 - (void)finishedWithAuth:(GTMOAuth2Authentication *)auth error:(NSError *)error {
     if (auth && !error) {
-        [self fetchDataWithFinishBlock:nil];
+        [self attemptDataFetch];
+    }
+    else {
+        [self.delegate didFailDataFetchWithError:[NSError errorWithDomain:dataFetcherErrorDomain code:5 userInfo:nil]];
     }
 }
 
--(void)fetchDataWithFinishBlock:(void (^)(NSData *data, NSError *error, BOOL cancelled))finishBlock {
-    if (!_signInData.authentication)
+-(void)attemptDataFetch {
+    if (!_signInData.authentication) {
         [self signIn];
-    
+    }
     else {
         GTLQueryPlus *query = [GTLQueryPlus queryForActivitiesListWithUserId:@"me" collection:kGTLPlusCollectionPublic];
         
@@ -59,8 +62,14 @@ static NSString *clientId = @"1016578238765.apps.googleusercontent.com";
                                              completionHandler:^(GTLServiceTicket *ticket,
                                                                  GTLPlusActivityFeed *feed,
                                                                  NSError *error) {
+                                                 
+                                                 if (error) {
+                                                     [self.delegate didFailDataFetchWithError:[NSError errorWithDomain:dataFetcherErrorDomain code:4 userInfo:nil]];
+                                                 }
                                                  for (GTLPlusActivity *activity in feed.items) {
-                                                     NSLog(@"%@", activity);
+                                                     DLog(@"%@", activity);
+                                                     [[NAFeedData sharedInstance] setFeedItemsArray:[NSMutableArray arrayWithCapacity:0]];
+                                                     [self.delegate fetchSucceeded];
                                                  }
                                              }];
     }
