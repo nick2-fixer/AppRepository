@@ -12,5 +12,7 @@
 
 @property (nonatomic, strong) NSString *bodyText;
 @property (nonatomic, strong) NSString *identifier;
+@property (nonatomic, strong) NSString *timestamp;
+@property (nonatomic, strong) NSString *author;
 
 @end
