@@ -168,12 +168,8 @@ static NSString* const kGGTwitterLoadingBackgroundImage = @"twitter_load.png";
     _navBar.titleTextAttributes = @{NSForegroundColorAttributeName: [UIColor whiteColor]};
     _backgroundView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
     
-    UIColor *color = [UIColor whiteColor];
+    UIColor *color = [UIColor grayColor];
     if (color) {
-#ifdef __IPHONE_7_0
-        if (SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(@"7.0")) {
-            // IPAD-1593 TourDeFrance, iOS 7: Issues related with new design
-            // 4. Incorrect status bar background for Twitter screen (screen 4)
             self.view.backgroundColor = color;
             
             if ([self.navigationBar respondsToSelector:@selector(setBarTintColor:)])
@@ -183,9 +179,7 @@ static NSString* const kGGTwitterLoadingBackgroundImage = @"twitter_load.png";
             self.navigationBar.tintColor = [UIColor whiteColor];
         }
         else
-#endif
             self.navigationBar.tintColor = color;
-    }
     
 	if (!UIInterfaceOrientationIsLandscape( self.orientation)) [self.view addSubview:_backgroundView];
 	

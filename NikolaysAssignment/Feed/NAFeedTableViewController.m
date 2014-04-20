@@ -70,6 +70,7 @@ static const CGFloat rowHeight = 80.0f;
 
 - (void)didFailDataFetchWithError:(NSError *)error {
     //TODO: show alertView
+    [self updateUI];
 }
 
 - (void)fetchSucceeded {
