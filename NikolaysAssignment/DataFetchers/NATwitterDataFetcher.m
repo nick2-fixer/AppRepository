@@ -37,15 +37,18 @@ static NSString *consumerSecret = @"NyE32ws2i1dfZHFvr5J4daDlUSsjrd8Bxi5NxENTiiM7
     _twitterEngine.consumerKey = consumerKey;
     _twitterEngine.consumerSecret = consumerSecret;
 
-    UIWindow *window = [UIApplication sharedApplication].keyWindow;
-    UIViewController *rootViewController = window.rootViewController;
-    UIViewController *controller = [SA_OAuthTwitterController controllerToEnterCredentialsWithTwitterEngine:_twitterEngine delegate:self];
-    
-    if (controller){
-        [rootViewController presentViewController:controller animated:YES completion:nil];
+    if (!_twitterEngine.isAuthorized) {
+        UIWindow *window = [UIApplication sharedApplication].keyWindow;
+        UIViewController *rootViewController = window.rootViewController;
+        UIViewController *controller = [SA_OAuthTwitterController controllerToEnterCredentialsWithTwitterEngine:_twitterEngine delegate:self];
+        
+        if (controller){
+            [rootViewController presentViewController:controller animated:YES completion:nil];
+        }
     }
-    
-    [self attemptDataFetch];
+    else {
+        [self attemptDataFetch];
+    }
 }
 
 - (void)attemptDataFetch {
@@ -86,6 +89,7 @@ static NSString *consumerSecret = @"NyE32ws2i1dfZHFvr5J4daDlUSsjrd8Bxi5NxENTiiM7
         feedItem.bodyText = [tweet valueForKey:@"text"];
         feedItem.identifier = [tweet valueForKey:@"id"];
         feedItem.author = [tweet valueForKeyPath:@"user.screen_name"];
+        feedItem.imageUrlString = [tweet valueForKeyPath:@"user.profile_image_url"];
         
         [tempFeedData addObject:feedItem];
     }

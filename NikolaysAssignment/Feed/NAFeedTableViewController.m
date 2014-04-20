@@ -16,6 +16,11 @@ static const CGFloat rowHeight = 80.0f;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    UIRefreshControl *refreshControl = [[UIRefreshControl alloc] init];
+    [refreshControl addTarget:self action:@selector(reload) forControlEvents:UIControlEventValueChanged];
+    self.refreshControl = refreshControl;
+    
     self.title = @"Feed";
 }
 
@@ -33,6 +38,14 @@ static const CGFloat rowHeight = 80.0f;
     }
 }
 
+- (void)stopRefresh {
+    [self.refreshControl endRefreshing];
+}
+
+- (void)reload {
+    [self.dataFetcher attemptDataFetch];
+}
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
@@ -48,6 +61,8 @@ static const CGFloat rowHeight = 80.0f;
         _dataFetcher = dataFetcher;
         _dataFetcher.delegate = self;
         [_dataFetcher attemptDataFetch];
+        
+        [self.refreshControl beginRefreshing];
     }
 }
 
@@ -67,6 +82,10 @@ static const CGFloat rowHeight = 80.0f;
     
     BOOL feedArrayIsEmpty = [[[NAFeedData sharedInstance] feedItemsArray] count] < 1;
     self.tableView.hidden = feedArrayIsEmpty;
+    
+    [self performSelector:@selector(stopRefresh) withObject:nil afterDelay:0.0];
+    
+    [self.tableView reloadData];
 }
 
 #pragma mark - Table view data source
@@ -94,7 +113,32 @@ static const CGFloat rowHeight = 80.0f;
     cell.feedItemAuthorLabel.text = feedItem.author;
     cell.feedItemText.text = feedItem.bodyText;
     
+    //load image asynchronously
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0), ^{
+        NSData *imgData = [NSData dataWithContentsOfURL:[NSURL URLWithString:feedItem.imageUrlString]];
+        if (imgData) {
+            UIImage *image = [UIImage imageWithData:imgData];
+            if (image) {
+                dispatch_async(dispatch_get_main_queue(), ^{
+                    __weak NAFeedCell *updateCell = (id)[tableView cellForRowAtIndexPath:indexPath];
+                    if (updateCell)
+                        cell.feedItemImageView.image = image;
+                });
+            }
+        }
+    });
+    
     return cell;
+}
+
+- (void)loadImageWithUrlString:(NSString *)urlString forImageView:(UIImageView*)imageView withSuccessBlock:(void (^)(UIImage *image))successBlock {
+    NSOperationQueue *queue = [[NSOperationQueue alloc] init];
+    [NSURLConnection sendAsynchronousRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:urlString]]
+                                       queue:queue
+                           completionHandler:^(NSURLResponse *response, NSData *data, NSError *error)
+     {
+         successBlock([UIImage imageWithData:data]);
+     }];
 }
 
 @end

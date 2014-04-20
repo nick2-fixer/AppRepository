@@ -14,5 +14,6 @@
 @property (nonatomic, strong) NSString *identifier;
 @property (nonatomic, strong) NSString *timestamp;
 @property (nonatomic, strong) NSString *author;
+@property (nonatomic, strong) NSString *imageUrlString;
 
 @end

@@ -12,6 +12,6 @@
 
 @property (nonatomic, weak) IBOutlet UILabel *feedItemText;
 @property (nonatomic, weak) IBOutlet UILabel *feedItemAuthorLabel;
-@property (nonatomic, weak) IBOutlet UIImageView *feedItemImageView;
+@property (nonatomic, strong) IBOutlet UIImageView *feedItemImageView;
 
 @end
