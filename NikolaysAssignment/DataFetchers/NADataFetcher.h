@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "NAFeedData.h"
 
-static const NSString *dataFetcherErrorDomain = @"DataFetcherErrorDomain";
+static NSString *dataFetcherErrorDomain = @"NADataFetcherErrorDomain";
 
 /*!
  @protocol
