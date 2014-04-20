@@ -92,6 +92,7 @@
 		5950C9E818FD86FC00677162 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5950C9E718FD86FC00677162 /* CoreMotion.framework */; };
 		5950C9EA18FD870D00677162 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5950C9E918FD870D00677162 /* AssetsLibrary.framework */; };
 		59727E3218FE824000E989A9 /* NAFeedData.m in Sources */ = {isa = PBXBuildFile; fileRef = 59727E3118FE824000E989A9 /* NAFeedData.m */; };
+		597E631A1903E28D00328588 /* NAFeedCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 597E63191903E28D00328588 /* NAFeedCell.m */; };
 		59B7B70418FC08FD0012E06F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59B7B70318FC08FD0012E06F /* Foundation.framework */; };
 		59B7B70618FC08FD0012E06F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59B7B70518FC08FD0012E06F /* CoreGraphics.framework */; };
 		59B7B70818FC08FD0012E06F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59B7B70718FC08FD0012E06F /* UIKit.framework */; };
@@ -319,6 +320,8 @@
 		5950C9E918FD870D00677162 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
 		59727E3018FE824000E989A9 /* NAFeedData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NAFeedData.h; sourceTree = "<group>"; };
 		59727E3118FE824000E989A9 /* NAFeedData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NAFeedData.m; sourceTree = "<group>"; };
+		597E63181903E28D00328588 /* NAFeedCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NAFeedCell.h; sourceTree = "<group>"; };
+		597E63191903E28D00328588 /* NAFeedCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NAFeedCell.m; sourceTree = "<group>"; };
 		59B7B70018FC08FD0012E06F /* NikolaysAssignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NikolaysAssignment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		59B7B70318FC08FD0012E06F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		59B7B70518FC08FD0012E06F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -514,6 +517,8 @@
 				590D067118FC474000A6C101 /* NAFeedTableViewController.m */,
 				59727E3018FE824000E989A9 /* NAFeedData.h */,
 				59727E3118FE824000E989A9 /* NAFeedData.m */,
+				597E63181903E28D00328588 /* NAFeedCell.h */,
+				597E63191903E28D00328588 /* NAFeedCell.m */,
 			);
 			path = Feed;
 			sourceTree = "<group>";
@@ -885,6 +890,7 @@
 				590F53B418FC1F230099E989 /* GTLPlusPeopleFeed.m in Sources */,
 				590F53B818FC1F230099E989 /* GTLServicePlus.m in Sources */,
 				590F53A718FC1F230099E989 /* GTLFramework.m in Sources */,
+				597E631A1903E28D00328588 /* NAFeedCell.m in Sources */,
 				590F53A918FC1F230099E989 /* GTLObject.m in Sources */,
 				590D065B18FC37F900A6C101 /* NSString+UUID.m in Sources */,
 				590D066418FC404F00A6C101 /* NADataFetcher.m in Sources */,
