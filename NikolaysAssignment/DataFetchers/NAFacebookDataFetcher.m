@@ -28,19 +28,24 @@ static NSString *facebbokFeedRequest = @"SELECT post_id, created_time, type, att
     [FBSession openActiveSessionWithReadPermissions:@[@"read_stream"]
                                        allowLoginUI:YES
                                   completionHandler:^(FBSession *session, FBSessionState state, NSError *error) {
-                                      
-                                      [FBRequestConnection startWithGraphPath:@"/fql"
-                                                                   parameters:[NSDictionary dictionaryWithObjectsAndKeys: facebbokFeedRequest, @"q", nil]
-                                                                   HTTPMethod:@"GET"
-                                                            completionHandler:^(FBRequestConnection *connection, id result, NSError *error) {
-                                                                
-                                                                if (error) {
-                                                                    [self.delegate didFailDataFetchWithError:[NSError errorWithDomain:dataFetcherErrorDomain code:2 userInfo:nil]];
-                                                                }
-                                                                else {
-                                                                    [self parseResponse:(id)result];
-                                                                }
-                                                            }];
+                                      if (error || !session) {
+                                          [self.delegate didFailDataFetchWithError:[NSError errorWithDomain:dataFetcherErrorDomain code:1 userInfo:nil]];
+                                          
+                                      }
+                                      else {
+                                          [FBRequestConnection startWithGraphPath:@"/fql"
+                                                                       parameters:[NSDictionary dictionaryWithObjectsAndKeys: facebbokFeedRequest, @"q", nil]
+                                                                       HTTPMethod:@"GET"
+                                                                completionHandler:^(FBRequestConnection *connection, id result, NSError *error) {
+                                                                    
+                                                                    if (error) {
+                                                                        [self.delegate didFailDataFetchWithError:[NSError errorWithDomain:dataFetcherErrorDomain code:2 userInfo:nil]];
+                                                                    }
+                                                                    else {
+                                                                        [self parseResponse:(id)result];
+                                                                    }
+                                                                }];
+                                      }
                                   }];
 }
 
