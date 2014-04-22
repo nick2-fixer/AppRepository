@@ -154,7 +154,7 @@ static NSString* const kGGTwitterLoadingBackgroundImage = @"twitter_load.png";
 #endif
     
 	_backgroundView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:kGGTwitterLoadingBackgroundImage]];
-	_backgroundView.backgroundColor = [UIColor blackColor];
+	_backgroundView.backgroundColor = [UIColor whiteColor];
     
 	if ( UIInterfaceOrientationIsLandscape( self.orientation ) ) {
         _navBar = [[[UINavigationBar alloc] initWithFrame: CGRectMake(0, offset, self.view.frame.size.width, kNavigationBarHeightLandscape)] autorelease];
