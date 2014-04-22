@@ -56,6 +56,8 @@ static const CGFloat rowHeight = 80.0f;
 
 - (void)setDataFetcher:(id)dataFetcher
 {
+    [[NAFeedData sharedInstance] setFeedItemsArray:[NSMutableArray arrayWithCapacity:0]];
+    
     if ((dataFetcher != _dataFetcher) && (dataFetcher != nil))
     {
         _dataFetcher = dataFetcher;
