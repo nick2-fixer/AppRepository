@@ -15,6 +15,7 @@ static NSString *clientId = @"1016578238765.apps.googleusercontent.com";
 @interface NAGooglePlusDataFetcher () <GPPSignInDelegate>
 
 @property (nonatomic) GPPSignIn *signInData;
+@property (nonatomic) NSArray *peopleArray;
 
 @end
 
@@ -56,22 +57,57 @@ static NSString *clientId = @"1016578238765.apps.googleusercontent.com";
         [self signIn];
     }
     else {
-        GTLQueryPlus *query = [GTLQueryPlus queryForActivitiesListWithUserId:@"me" collection:kGTLPlusCollectionPublic];
+        GTLQueryPlus *query = [GTLQueryPlus queryForPeopleListWithUserId:@"me" collection:kGTLPlusCollectionVisible];
         
-        [[[GPPSignIn sharedInstance] plusService] executeQuery:query
-                                             completionHandler:^(GTLServiceTicket *ticket,
-                                                                 GTLPlusActivityFeed *feed,
-                                                                 NSError *error) {
-                                                 
-                                                 if (error) {
-                                                     [self.delegate didFailDataFetchWithError:[NSError errorWithDomain:dataFetcherErrorDomain code:4 userInfo:nil]];
-                                                 }
-                                                 for (GTLPlusActivity *activity in feed.items) {
-                                                     DLog(@"%@", activity);
-                                                     [[NAFeedData sharedInstance] setFeedItemsArray:[NSMutableArray arrayWithCapacity:0]];
-                                                     [self.delegate fetchSucceeded];
-                                                 }
-                                             }];
+        [[[GPPSignIn sharedInstance] plusService] executeQuery:query completionHandler:^(GTLServiceTicket *ticket, GTLPlusPeopleFeed *peopleFeed, NSError *error) {
+            
+            if (error) {
+                [self.delegate didFailDataFetchWithError:[NSError errorWithDomain:dataFetcherErrorDomain code:4 userInfo:nil]];
+            }
+            else {
+                // Get an array of people from GTLPlusPeopleFeed
+                _peopleArray = peopleFeed.items;
+                
+                NAFeedData *feedData = [NAFeedData sharedInstance];
+                NSMutableArray *tempFeedData = [NSMutableArray arrayWithCapacity:0];
+                
+                for (GTLPlusPerson *person in _peopleArray) {
+                    
+                    NSString *userImageUrl = person.image.url;
+                    
+                    //Given list of uers, get their activities
+                    GTLQueryPlus *query = [GTLQueryPlus queryForActivitiesListWithUserId:person.identifier collection:kGTLPlusCollectionPublic];
+                    
+                    [[[GPPSignIn sharedInstance] plusService]
+                     executeQuery:query
+                     completionHandler:^(GTLServiceTicket *ticket, id object, NSError *error) {
+                         if (error) {
+                             [self.delegate didFailDataFetchWithError:[NSError errorWithDomain:dataFetcherErrorDomain code:4 userInfo:nil]];
+                         }
+                         else {
+                             GTLPlusActivityFeed *userActivities = (GTLPlusActivityFeed *)object;
+                             
+                             for (GTLPlusActivityObject *activity in userActivities) {
+                                 
+                                 if ([[activity valueForKey:@"title"] length] < 1) {
+                                     continue;
+                                 }
+                                 
+                                 NAFeedItem *activityItem = [[NAFeedItem alloc] init];
+                                 activityItem.author = person.displayName;
+                                 activityItem.bodyText = [activity valueForKey:@"title"];
+                                 activityItem.imageUrlString = userImageUrl;
+                                 
+                                 [tempFeedData addObject:activityItem];
+                             }
+
+                             feedData.feedItemsArray = tempFeedData;
+                             [self.delegate fetchSucceeded];
+                         }
+                     }];
+                }
+            }
+        }];
     }
 }
 
